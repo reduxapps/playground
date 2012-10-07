@@ -8,12 +8,11 @@
         .container
           = render 'layouts/navigation'
     #main{:role => "main"}
-      .container
-        .content
+      %div{:class => 'container signup_container'}
+        %div{:class => 'content span6'}
           .row
-            .span12
-              = render 'layouts/messages'
-              = yield
+            = render 'layouts/messages'
+            = yield
           %footer
       / ! end of .container
     / ! end of #main
